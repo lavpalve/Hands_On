@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission From</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .formDiv{
+            background-color: gray;
+        }
+        label{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h2 class="text-center mt-3 mb-3">Admission Form</h2>
+            <div class="col-8 formDiv text-dark">
+                <form>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">First Name: </label>
+                        <input class="form-control" type="text" name="fName" placeholder="First Name" required/>
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Last Name: </label>
+                        <input class="form-control" type="text" name="lName" placeholder="Last Name" required/>
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Email: </label>
+                        <input class="form-control" type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Phone Number: </label>
+                        <input class="form-control" type="tel" name="phone" placeholder="Phone number" pattern="[0-9]{12}" />
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Gender: </label>
+                        <select class="form-control" name="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Cast: </label><br>
+                        <input type="radio" class="text-white mx-3" name="cast" value="SC">SC</input>
+                        <input type="radio" class="text-white mx-3" name="cast" value="ST" >ST</input>
+                        <input type="radio" class="text-white mx-3" name="cast" value="OBC" >OBC</input>
+                        <input type="radio" class="text-white mx-3" name="cast" value="OPEN">OPEN</input>
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Language: </label><br>
+                        <input type="checkbox" class="text-white mx-3" name="marathi" value="marathi">Marathi</input>
+                        <input type="checkbox" class="text-white mx-3" name="hindi" value="hindi" >Hindi</input>
+                        <input type="checkbox" class="text-white mx-3" name="english" value="english" >English</input>
+                        <input type="checkbox" class="text-white mx-3" name="tamil" value="tamil">Tamil</input>
+                        <input type="checkbox" class="text-white mx-3" name="telgu" value="telgu">Telgu</input>
+                    </div>
+                    <hr>
+                    <h5>Previous Academic Record</h5>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">School Name: </label>
+                        <input class="form-control" type="text" name="phone" placeholder="Previous school name" pattern="[A-Za-z]" />
+                    </div>
+                    <div class="form-group my-1 mx-2">
+                        <label class="form-label">Percentage: </label>
+                        <input class="form-control" type="text" name="phone" placeholder="percentage" pattern="[0-9]" maxlength="3" />
+                    </div>
+                    <button class="btn btn-primary my-3 mb-5 float-right" style="float: right;" type="submit">Submit</button>
+                </form>
+                <form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
